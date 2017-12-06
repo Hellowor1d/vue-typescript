@@ -1,6 +1,6 @@
 {
-  "extends": "tslint-config-airbnb-base",
-  "globals": {
-    "require": true
-  }
+    "extends": "tslint-config-airbnb-base",
+    "globals": {
+        "require": true
+    }
 }
