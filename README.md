@@ -46,3 +46,19 @@ yarn add vue-class-component vue-property-decorator
 ```
 yarn add ts-loader typescript tslint tslint-loader tslint-config-airbnb-base -D
 ```
+3. 配置 webpack main.js ==> main.ts
+
+找到entry.app 将main.js 改成 main.ts, 顺便把项目文件中的main.js也改成main.ts, 里面内容保持不变
+
+4. resolve.extensions 里面加上.ts 后缀 （是为了之后引入.ts的时候不写后缀）
+
+5. 找到module.rules 添加webpack对.ts的解析
+
+6. 添加 tsconfig.json，  tslint.json (使用 tslint-config-airbnb-base 插件)
+
+7. 添加 vue-shim.d.ts 文件
+
+告诉 TypeScript *.vue 后缀的文件可以交给 vue 模块来处理
+
+8. 改造 .vue 文件  script 标签上加上 lang="ts"  并且改造 vue 组件构造方式
+
