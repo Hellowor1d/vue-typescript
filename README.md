@@ -32,6 +32,17 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ### 初始化阶段
 ```
 vue init webpack vue-typescript
-sudo npm yarn (chromedriver: Command failed.)
+sudo  yarn (chromedriver: Command failed.)
 ```
 有一个安装错误，不影响项目启动，后续再深入解决
+
+### 开始打造 Typescript 所需环境
+如果需要权限，添加 sudo 再执行以下命令
+1. 添加 vue-class-component  vue-property-decorator
+```
+yarn add vue-class-component vue-property-decorator
+```
+2. 添加 ts-loader typescript tslint tslint-loader 等 tyepescript 解析工具
+```
+yarn add ts-loader typescript tslint tslint-loader tslint-config-airbnb-base -D
+```
