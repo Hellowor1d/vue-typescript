@@ -28,6 +28,10 @@ export default {
       msg: 'Welcome to Your Vue.js + TypeScript App',
     };
   },
+  beforeCreate() {
+  // eslint-disable-next-line
+    console.log("beforeCreate")
+  },
 
 };
 </script>
