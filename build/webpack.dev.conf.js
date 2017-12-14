@@ -6,7 +6,7 @@ const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
-const StylelintPlugin = require('stylelint-webpack-plugin')
+// const StylelintPlugin = require('stylelint-webpack-plugin')
 const portfinder = require('portfinder')
 
 const HOST = process.env.HOST
@@ -48,7 +48,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         new webpack.NoEmitOnErrorsPlugin(),
         // https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({filename: 'index.html', template: 'index.html', inject: true}),
-        new StylelintPlugin({files: ['**/*.vue']})
+        // new StylelintPlugin({files: ['**/*.vue']})
     ]
 })
 
