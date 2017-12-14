@@ -71,10 +71,10 @@ export default {
   };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-  $highlight-color: #F90;
+<style scoped lang="stylus">
+  $highlight-color: #f90,
 
   .demonstration {
-    color: $highlight-color;
+    color: $highlight-color
   }
 </style>
