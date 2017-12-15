@@ -4,6 +4,7 @@
     <router-view/>
     <h2>跳转页面</h2>
     <ul>
+      <li><router-link to="/hello">hello</router-link></li>
       <li><router-link to="/schedule">schedule</router-link></li>
       <li><router-link to="/classroom">classroom</router-link></li>
       <li><router-link to="/reset">reset</router-link></li>
